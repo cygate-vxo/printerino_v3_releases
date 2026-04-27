@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Printerino v3 – Web Flasher</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 4rem auto; padding: 0 1rem; line-height: 1.5; }
+    h1 { margin-bottom: 0.25rem; }
+    .sub { color: #666; margin-top: 0; }
+    .note { background: #fffae6; border-left: 4px solid #f5c518; padding: 0.75rem 1rem; border-radius: 4px; }
+    code { background: #f4f4f4; padding: 0 0.25rem; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <h1>Printerino v3</h1>
+  <p class="sub">Flash the latest firmware directly from your browser.</p>
+
+  <p class="note">
+    Requires Chrome or Edge on desktop with a USB connection to the ESP32-S3-Box-3.
+  </p>
+
+  <p>
+    <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+  </p>
+
+  <p>Manifest: <a href="manifest.json">manifest.json</a></p>
+
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+</body>
+</html>
